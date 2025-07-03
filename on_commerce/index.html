@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wormhole eCommerce Store</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-storage.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">Los~Polos Shop</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="products" id="product-list">
+    <!-- Products will be added here dynamically -->
+  </section>
+
+  <!-- Firebase Initialization -->
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyD8LMcaJ3cgbYafV7EAEymg5Sch62PGPvI",
+      authDomain: "onshop-229ce.firebaseapp.com",
+      projectId: "onshop-229ce",
+      storageBucket: "onshop-229ce.appspot.com", <!-- Fixed typo here too -->
+      messagingSenderId: "39047736846",
+      appId: "1:39047736846:web:dba676d14a67975f3a565f"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <!-- Your custom JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
