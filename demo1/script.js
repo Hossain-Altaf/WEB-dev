@@ -1,0 +1,3 @@
+function learn(){
+    alert("learning")
+}
